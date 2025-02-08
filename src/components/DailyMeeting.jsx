@@ -187,7 +187,7 @@ const DailyMeeting = () => {
         ) : (
           <DailyProvider>
             <MeetingRoom
-              token={meetingData.client_token} // or meetingData.expert_token
+              token={meetingData.expert_token} // or meetingData.client_token
               roomUrl={meetingData.room_url}
               onLeave={handleLeaveMeeting}
             />
